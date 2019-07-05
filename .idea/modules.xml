@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/backend/backend.iml" filepath="$PROJECT_DIR$/backend/backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_library/java_library.iml" filepath="$PROJECT_DIR$/java_library/java_library.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jokes_library/jokes_library.iml" filepath="$PROJECT_DIR$/jokes_library/jokes_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/jokes_viewer/jokes_viewer.iml" filepath="$PROJECT_DIR$/jokes_viewer/jokes_viewer.iml" />
     </modules>
   </component>

@@ -4,6 +4,7 @@ apply plugin: 'com.google.cloud.tools.endpoints-framework-client'
 
 buildscript {
     repositories {
+        google()
         jcenter()
     }
     dependencies {
@@ -52,14 +53,14 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     endpointsServer project(path: ':backend', configuration: 'endpoints')
-   // implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     freeImplementation('com.google.android.gms:play-services-ads:15.0.1', {
         exclude group: 'com.android.support'
     })
-  implementation project(':jokes_library')
+  //implementation project(':jokes_library')
     implementation project(':java_library')
 
     implementation 'com.google.api-client:google-api-client:1.23.0'
@@ -71,4 +72,5 @@ dependencies {
     })
 
     testImplementation 'junit:junit:4.12'
+    implementation  project(path: ':jokes_viewer')
 }

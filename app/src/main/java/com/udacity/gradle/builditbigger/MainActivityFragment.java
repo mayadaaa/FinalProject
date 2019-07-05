@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
+import com.example.jokes_viewer.JokeViewerActivity;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
