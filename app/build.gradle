@@ -14,7 +14,6 @@ buildscript {
 
 android {
     compileSdkVersion 28
-    buildToolsVersion "26.0.3"
 
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
@@ -37,7 +36,7 @@ android {
 
     productFlavors {
         free {
-            applicationId "com.udacity.gradle.builditbigger.free"
+            applicationId "com.udacity.gradle.builditbigger.Main"
 
         }
 
@@ -56,11 +55,15 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.jakewharton:butterknife:8.8.1'
+
+    androidTestImplementation 'com.android.support.test:runner:0.4.1'
+    androidTestImplementation 'com.android.support.test:rules:0.4.1'
+
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     freeImplementation('com.google.android.gms:play-services-ads:15.0.1', {
         exclude group: 'com.android.support'
     })
-  //implementation project(':jokes_library')
+    implementation project(':jokes_viewer')
     implementation project(':java_library')
 
     implementation 'com.google.api-client:google-api-client:1.23.0'
@@ -72,5 +75,5 @@ dependencies {
     })
 
     testImplementation 'junit:junit:4.12'
-    implementation  project(path: ':jokes_viewer')
+
 }
