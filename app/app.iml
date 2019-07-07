@@ -243,5 +243,7 @@
     <orderEntry type="library" name="Gradle: com.android.support:swiperefreshlayout:28.0.0@aar" level="project" />
     <orderEntry type="module" module-name="jokes_viewer" />
     <orderEntry type="module" module-name="java_library" />
+    <orderEntry type="module" module-name="jokes_viewer" />
+    <orderEntry type="module" module-name="java_library" />
   </component>
 </module>

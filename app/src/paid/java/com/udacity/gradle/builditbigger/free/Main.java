@@ -17,7 +17,6 @@ public class Main extends Fragment {
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.activity_paid, container, false);
 
-        AdView mAdView = (AdView) root.findViewById(R.id.adView);
 
         // Set onClickListener for the button
         Button button = (Button) root.findViewById(R.id.joke_btn);
@@ -34,10 +33,7 @@ public class Main extends Fragment {
         // Create an ad request. Check logcat output for the hashed device ID to
         // get test ads on a physical device. e.g.
         // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .build();
-        mAdView.loadAd(adRequest);
+
         return root;
     }
 
